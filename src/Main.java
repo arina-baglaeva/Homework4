@@ -14,17 +14,16 @@ public class Main {
         byte temp = 15;
         if (temp<5){
             System.out.println("На улице "+temp+" градусов, нужно надеть шапку");
-        }
-        if (temp>5){
+        }else{
             System.out.println("На улице "+temp+" градусов, можно идти без шапки");
         }
         //3 task
         short speed = 70;
-        boolean SpeedMoreThan60 = (speed >60);
-        if(SpeedMoreThan60){
+        boolean speedMoreThan60 = (speed >60);
+        if(speedMoreThan60){
             System.out.println("Если скорость "+speed+" , то придется заплатить штраф.");
         }else{
-            System.out.println("Если скорость "+speed+" , то придется заплатить штраф.");
+            System.out.println("Если скорость "+speed+" , то можно ездить спокойно.");
         }
         //4 task
         byte ag = 10;
@@ -66,25 +65,27 @@ public class Main {
             else if (two>three) {
                 System.out.println("Two is the biggest");
             }
+            else{
+                System.out.println("Two and Three are equal and the biggest.");
+            }
         }
         else if(one>two){
             if (one>three){
                 System.out.println("One is the biggest");
             }else if (three> one){
                 System.out.println("Three is the biggest");
+            }else{
+                System.out.println("One and Three are equal and the biggest. ");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
+        else{
+            if (two<three){
+                System.out.println("Three is the biggest");
+            }
+            else if (two>three) {
+                System.out.println("Two and one are equal and the biggest");
+            }
+        }
 
 
     }
