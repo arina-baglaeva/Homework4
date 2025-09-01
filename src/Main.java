@@ -85,6 +85,9 @@ public class Main {
             else if (two>three) {
                 System.out.println("Two and one are equal and the biggest");
             }
+            else{
+                System.out.println("One, Two and Three are equal.");
+            }
         }
 
 
